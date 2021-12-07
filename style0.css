@@ -1,0 +1,187 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+canvas {
+  display: block;
+}
+
+/* Style the navigation menu */
+.navbar {
+  flaot: center;
+  background-color: #262626;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 43%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #d2d2d2;
+  color: #262626;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #e06e50;
+}
+
+.navbar a.active:hover {
+  background-color: #d2d2d2;
+  color: #262626;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+}
+
+img {
+  border: 0px solid #ccc;
+  box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.3);
+  width: 200px;
+}
+
+img:hover {
+  border: 0px solid #ccc;
+  box-shadow: 2px 2px 0px 0px  rgba(0,0,0,0.3);
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+}
+
+body {
+  font: normal .80em arial;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2e2e2e;
+  /*background: #F0EFE2 url(background.png) repeat;*/
+  color: #d9d9d9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  margin: 0 0 0px 0;
+  padding: 15px 0 5px 0;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h2 {
+  font: normal 175% 'computer modern', arial, sans-serif;
+}
+
+h4, h5, h6 {
+  margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 120% arial, sans-serif;
+}
+
+
+.hashtag{
+  color: #f2f2f2;
+  padding: 4px 4px 4px 4px;
+  background-color:#e06e50;
+  border-radius: 15px;
+  font-size: 12px;
+  text-decoration:none;
+  transition: font-size 0.2s;
+}
+.hashtag:hover {
+  background-color:#e06e50;
+  font-size: 13px;
+   /*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 7px 5px 0 rgba(0,0,0,0.19);*/
+}
+
+.left {
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right {
+  float: right;
+  width: auto;
+  margin-left: 10px;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.bold_title{
+  font-weight: bold;
+}
+
+button {
+    background-color: #262626;
+    border: none;
+    color: #d3d3d3;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 0px;
+}
+
+button:hover {
+   background-color: #e06e50;
+   color: white;
+   transition: background-color 0.2s;
+}
+
+input {
+    background-color: #d3d3d3 ;
+    border: none;
+    color: #262626;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 0px;
+}
+
+textarea {
+    background-color: #d3d3d3 ;
+    border: none;
+    color: #262626;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea:disabled {
+    background-color: #393939 ;
+    border: none;
+    color: #c6c6c6;
+    padding: 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 0px;
+}
