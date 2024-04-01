@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'HurmeGeometricSans1-Bold';
+    src: url('font/HurmeGeometricSans1-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans1';
+    src: url('font/HurmeGeometricSans1.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'HurmeGeometricSans1-Thin';
+    src: url('font/HurmeGeometricSans1-Thin.otf') format('opentype');
+}
+
+h1 {
+    font-family: 'HurmeGeometricSans1-Bold';
+    font-size: xx-large;
+}
+
+h2 {
+    font-family: 'HurmeGeometricSans1-Bold';
+    font-size: x-large;
+}
+
+p {
+    font-family: 'HurmeGeometricSans1';
+    max-width: 50vw;
+}
+
+ul {
+    font-family: 'HurmeGeometricSans1';
+    max-width: 50vw;
+}
+
+small {
+    font-family: 'HurmeGeometricSans1-Thin';
+    max-width: 50vw;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.description {
+    font-family: 'HurmeGeometricSans1-Thin';
+    font-size: normal;
+}
+
+.topic {
+    font-family: 'HurmeGeometricSans1-Thin';
+    font-size: small;
+    background-color: #383838;
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+    border-radius: 10px ;
+    text-align: center;
+}
+
+.link2 {
+    background-color:  #66936c;
+    padding: 2px;
+    margin: 2px;
+    width: 120px;
+    border-radius: 5px ;
+    text-align: center;
+}
+
+.accepted {
+    font-family: 'HurmeGeometricSans1-Thin';
+    font-size: x-small;
+    background-color: #c96e00;
+    padding: 3px;
+    width: 70px;
+    border-radius: 5px ;
+    text-align: center;
+    display: inline;
+}
+
+.poster {
+    font-family: 'HurmeGeometricSans1-Thin';
+    font-size: x-small;
+    background-color: #006fc9;
+    padding: 3px;
+    width: 70px;
+    border-radius: 5px ;
+    text-align: center;
+    display: inline;
+}
+
+.paper {
+    font-family: 'HurmeGeometricSans1-Thin';
+    font-size: x-small;
+    background-color: #6b00c9;
+    padding: 3px;
+    width: 70px;
+    border-radius: 5px ;
+    text-align: center;
+    display: inline;
+}
+
+.year {
+    font-family: 'HurmeGeometricSans1-Thin';
+    font-size: small;
+    background-color: #315042;
+    padding: 3px;
+    width: 70px;
+    border-radius: 5px ;
+    text-align: center;
+    display: inline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+    scroll-behavior: smooth;
+    text-align: justify;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.next-section {
+    position:absolute;
+    bottom: 100px;
+    right: 150px;
+    font-size: 2em;
+    color: white;
+    transition: transform 0.3s ease-in-out; /* Add a transition effect */
+}
+
+.next-section:hover {
+    transform: scale(1.3); /* Scale the image up when hovered */
+}
+
+.prev-section {
+    position: absolute;
+    top: 75px;
+    right: 150px;
+    font-size: 2em;
+    color: white;
+    transition: transform 0.3s ease-in-out; /* Add a transition effect */
+}
+
+.prev-section:hover {
+    transform: scale(1.3); /* Scale the image up when hovered */
+}
+
+.social-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.topics {
+    max-width: 20vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.header-right {
+    
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    right: 15vw;
+    padding: 20px;
+}
+
+.header-right ul {
+    list-style-type: none;
+}
+
+.header-right ul li {
+    margin-bottom: 10px;
+}
+
+.header-right ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.profile-img-container {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+.profile-img {
+    position: absolute;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img:hover {
+    animation: spin 2s linear infinite;
+    mix-blend-mode: screen;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+.color-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #454545; /* Change this to your desired color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+
+.profile-img:hover ~ .color-circle {
+    opacity: 1;
+}
+
+
+.logo {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    justify-content: center;
+}
+
+.grid-item {
+    position: relative;
+    width: 450px; /* Set a specific width */
+    height: 450px; /* Set a specific height */
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%; /* Make the image fill its container */
+    object-fit: cover; /* Resize the image to maintain its aspect ratio while filling the container */
+    transition: .3s ease;
+}
+
+.grid-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Add a semi-transparent background */
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-item:hover .overlay {
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.grid-item .overlay .title {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px; /* Add a space below the title */
+}
+
+.grid-item .overlay .text {
+    max-width: 300px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%; /* Make the text span the full width of the grid item */
+    display: none; /* Hide the text by default */
+    transition: .3s ease; /* Add a transition */
+}
+
+.grid-item:hover .overlay .title {
+    display: none; /* Make the title transparent when the mouse hovers over the grid item */
+}
+
+.grid-item:hover .overlay .text {
+    display: block; /* Show the text when the mouse hovers over the grid item */
+}
+
+#header {
+    background-color: #454545 ; /*#750D37;*/
+    padding: 20px;
+    padding-left: 100px;
+}
+
+#header .content {
+    flex: 1;
+}
+
+#about-me {
+    background-color: #084887;
+    padding: 20px;
+    padding-left: 100px;
+}
+#publications {
+    background-color: #F58A07;
+    padding: 20px;
+    padding-left: 100px;
+}
+#current-project {
+    background-color: #7FB685;
+    padding: 20px;
+    padding-left: 100px;
+}
+#experience {
+    background-color: #426A5A;
+    padding: 20px;
+    padding-left: 100px;
+}
