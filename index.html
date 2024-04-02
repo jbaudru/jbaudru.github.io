@@ -3,7 +3,9 @@
 <head>
     <title>Julien Baudru</title> <!-- Change the page title here -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" media="(min-width:1100px)" href="styles.css" />
+    <link rel="stylesheet" media="(max-width:1100px)" href="mobile.css" />
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -15,12 +17,17 @@
         <div class="content">
             <h1>Julien Baudru</h1>
 
-            <br>
 
             <p><i>PhD student in Engineering Sciences and Technology</i></p>
             <p>IRIDIA - Université Libre de Bruxelles</p>
 
             <br>
+
+            <div class="profile-img-container">
+                <img src="img/vinyl.jpg" class="profile-img">
+                <img src="img/profile.jpg" class="profile-img">
+                <div class="color-circle"></div>
+            </div>
 
             <p><b>💡 Topics</b></p>
             <div class="topics">
@@ -40,19 +47,15 @@
             <br>
             <p><b>🖖 Follow me</b></p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/julien-baudru/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://github.com/jbaudru" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a href="https://www.researchgate.net/profile/Julien-Baudru" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a>
+                <a class="social-img" href="https://www.linkedin.com/in/julien-baudru/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a class="social-img" href="https://github.com/jbaudru" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a class="social-img" href="https://www.researchgate.net/profile/Julien-Baudru" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a>
             </div>
 
             <a href="#about-me" class="next-section"><i class="fas fa-arrow-down fa-2x"></i></a>
         </div>
         
-        <div class="profile-img-container">
-            <img src="img/vinyl.jpg" class="profile-img">
-            <img src="img/profile.jpg" class="profile-img">
-            <div class="color-circle"></div>
-        </div>
+        
         
         
         
@@ -68,9 +71,9 @@
 
         <br>
         <div class="logo">
-            <img src="img/IRIDIA.png" class="header-img" style="height: 50px; margin-left:20px; margin-right:20px">
-            <img src="img/FARI.png" class="header-img" style="height: 40px; margin-left:20px; margin-right:20px">
-            <img src="img/ULB.png" class="header-img" style="height: 50px; margin-left:20px; margin-right:20px">
+            <img src="img/IRIDIA.png" class="header-img" >
+            <img src="img/FARI.png" class="header-img">
+            <img src="img/ULB.png" class="header-img">
         </div>
     </section>
 
@@ -101,38 +104,43 @@
         <p><b>📄 Publications </b> </p> 
         <p>List of publications (submitted and accepted) in journals or conferences:</p>
         
-        <p class="accepted">Accepted</p> <p class="poster">Poster</p> <small><b>NetSciX 2022</b> - Porto - <i><a href="https://www.researchgate.net/publication/367340003_Understanding_the_universe_of_jazz_by_means_of_its_musicians_networks" target="_blank">Understanding the universe of jazz by means of its musicians networks.</a></i> </small> 
-        <br>
-        <p class="accepted">Accepted</p> <p class="poster">Poster</p> <small><b>NetSci 2024</b> - Québec - <i><a href="https://www.researchgate.net/publication/378793518_Lyric_Networks_Unveiled_A_Novel_Approach_to_Analyzing_The_Beatles'_Songs_Using_Text_Embeddings_and_Network_Analysis_Abstract" target="_blank">Lyric Networks Unveiled: A Novel Approach to Analyzing The Beatles’ Songs Using Text Embeddings and Network Analysis.</a></i></small>
-        <br>
-        <p class="accepted">Accepted</p> <p class="poster">Poster</p> <small><b>NetSci 2024</b> - Québec - <i><a href="https://www.researchgate.net/publication/378568484_Heuristic_Optimal_Meeting_Point_Algorithm_for_Car-Sharing_in_Large_Multi-modal_Road_Networks_Abstract" target="_blank">Heuristic Optimal Meeting Point Algorithm for Car-Sharing in Large Multi-modal Road Networks.</a></i></small>
-        <br>
-        <p class="accepted">Accepted</p> <p class="paper">Paper</p> <small><b>VEHITS 2024</b> - Angers - <i><a href="https://www.researchgate.net/publication/379044384_Heuristic_Optimal_Meeting_Point_Algorithm_for_Car-Sharing_in_Large_Multimodal_Road_Networks" target="_blank">Heuristic Optimal Meeting Point Algorithm for Car-Sharing in Large Multimodal Road Networks.</a></i></small>
-        
+        <div class="text">
+            <p class="accepted">Accepted</p> <p class="poster">Poster</p> <small><b>NetSciX 2022</b> - Porto - <i><a href="https://www.researchgate.net/publication/367340003_Understanding_the_universe_of_jazz_by_means_of_its_musicians_networks" target="_blank">Understanding the universe of jazz by means of its musicians networks.</a></i> </small> 
+            <br>
+            <p class="accepted">Accepted</p> <p class="poster">Poster</p> <small><b>NetSci 2024</b> - Québec - <i><a href="https://www.researchgate.net/publication/378793518_Lyric_Networks_Unveiled_A_Novel_Approach_to_Analyzing_The_Beatles'_Songs_Using_Text_Embeddings_and_Network_Analysis_Abstract" target="_blank">Lyric Networks Unveiled: A Novel Approach to Analyzing The Beatles’ Songs Using Text Embeddings and Network Analysis.</a></i></small>
+            <br>
+            <p class="accepted">Accepted</p> <p class="poster">Poster</p> <small><b>NetSci 2024</b> - Québec - <i><a href="https://www.researchgate.net/publication/378568484_Heuristic_Optimal_Meeting_Point_Algorithm_for_Car-Sharing_in_Large_Multi-modal_Road_Networks_Abstract" target="_blank">Heuristic Optimal Meeting Point Algorithm for Car-Sharing in Large Multi-modal Road Networks.</a></i></small>
+            <br>
+            <p class="accepted">Accepted</p> <p class="paper">Paper</p> <small><b>VEHITS 2024</b> - Angers - <i><a href="https://www.researchgate.net/publication/379044384_Heuristic_Optimal_Meeting_Point_Algorithm_for_Car-Sharing_in_Large_Multimodal_Road_Networks" target="_blank">Heuristic Optimal Meeting Point Algorithm for Car-Sharing in Large Multimodal Road Networks.</a></i></small>
+            
+        </div>
+
         <br>
         <br>
 
         <p><b>⚙️ Technical reports </b> </p> 
         <p>List of public technical reports:</p>
         
-        <p class="poster">Report</p>  <small><i><a href="https://www.researchgate.net/publication/377895967_LLM-Driven_Content_Hands-Free_Blog_and_Article_Generation_Across_Diverse_Topics" target="_blank">LLM-Driven Content: Hands-Free Blog and Article Generation Across Diverse Topics.</a></i> </small> 
-        <br>
-        <p class="poster">Report</p>  <small><i><a href="https://www.researchgate.net/publication/377337168_ACE_Adaptative_ChatGPT_for_Entreprise" target="_blank">ACE: Adaptative ChatGPT for Entreprise.</a></i></small>
+        <div class="text">
+            <p class="poster">Report</p>  <small><i><a href="https://www.researchgate.net/publication/377895967_LLM-Driven_Content_Hands-Free_Blog_and_Article_Generation_Across_Diverse_Topics" target="_blank">LLM-Driven Content: Hands-Free Blog and Article Generation Across Diverse Topics.</a></i> </small> 
+            <br>
+            <p class="poster">Report</p>  <small><i><a href="https://www.researchgate.net/publication/377337168_ACE_Adaptative_ChatGPT_for_Entreprise" target="_blank">ACE: Adaptative ChatGPT for Entreprise.</a></i></small>
+        </div>
 
         <br>
         <br>
         
         <p><b>🧑‍🎓 Courses </b> <br> </p> 
         <p>List of courses for which I was teaching assistant:</p>
-        
-        <p class="poster">Project</p> <p class="paper">Pratical</p> <small> <b>Université Libre de Bruxelles</b> - INFO-H410 - Techniques of artificial intelligence </small>
-        <br>
-        <p class="poster">Project</p> <small> <b>Université Libre de Bruxelles</b> - INFO-H402 - Computing project</small>
-        <br>
-        <p class="poster">Project</p> <small> <b>Université Libre de Bruxelles</b> - INFO-S2001 - Informatique </small>
-        <br>
-        <p class="poster">Project</p> <small> </small><small><b>Université Libre de Bruxelles</b> - TRAN-H201 - Projet multidisciplinaire II et gestion de projet </small>
-        
+        <div class="text">
+            <p class="poster">Project</p> <p class="paper">Pratical</p> <small> <b>Université Libre de Bruxelles</b> - INFO-H410 - Techniques of artificial intelligence </small>
+            <br>
+            <p class="poster">Project</p> <small> <b>Université Libre de Bruxelles</b> - INFO-H402 - Computing project</small>
+            <br>
+            <p class="poster">Project</p> <small> <b>Université Libre de Bruxelles</b> - INFO-S2001 - Informatique </small>
+            <br>
+            <p class="poster">Project</p> <small> </small><small><b>Université Libre de Bruxelles</b> - TRAN-H201 - Projet multidisciplinaire II et gestion de projet </small>
+        </div>
         
         <a href="#about-me" class="prev-section"><i class="fas fa-arrow-up fa-2x"></i></a>
         <a href="#current-project" class="next-section"><i class="fas fa-arrow-down fa-2x"></i></a>
@@ -220,4 +228,11 @@
             audio.pause();
         });
     });
+</script>
+
+<script>
+    for(let i = 0; i < document.styleSheets.length; i++) {
+        console.log(document.styleSheets[i].href);
+    }
+    console.log(window.innerWidth);
 </script>
