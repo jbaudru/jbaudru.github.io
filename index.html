@@ -33,7 +33,7 @@
 <body>
     <section id="header">
         <div class="content">
-            <h1>Julien Baudru</h1>
+            <h1>Julien Baudru <a class="social-img" href="files/what.html" target="_blank"><img id="rune0" class="rune" src="img/rune_0.png"> </a></h1> 
 
 
             <p><i>PhD student in Engineering Sciences and Technology</i></p>
@@ -56,8 +56,6 @@
                 <p class="topic">Sustainable Mobility</p> 
                 <p class="topic">Smart Transportation</p> 
             </div>
-            
-
             <br>
             <br>
             <p><b>🖖 Follow me</b></p>
@@ -66,22 +64,15 @@
                 <a class="social-img" href="https://github.com/jbaudru" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                 <a class="social-img" href="https://www.researchgate.net/profile/Julien-Baudru" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a>
             </div>
-
             <a href="#about-me" class="next-section"><i class="fas fa-arrow-down fa-2x"></i></a>
         </div>
         
-        
-        
-        
-        
         <div class="header-right">
             <h2>Summary</h2>
-            
                 <p><a href="#about-me">🪪 About Me</a></p>
                 <p><a href="#publications">📄 Academic </a></p>
                 <p><a href="#current-project">🧪 Projects</a></p>
                 <p><a href="#experience">🧑‍🎓 Education & Work </a></p>
-            
         </div>
 
         <br>
@@ -89,8 +80,10 @@
             <img src="img/IRIDIA.png" class="header-img" >
             <img src="img/FARI.png" class="header-img">
             <img src="img/ULB.png" class="header-img">
+          
         </div>
     </section>
+
 
     <section id="about-me">
         <h1>About Me</h1>
@@ -113,6 +106,7 @@
         <a href="#header" class="prev-section"><i class="fas fa-arrow-up fa-2x"></i></a>
         <a href="#publications" class="next-section"><i class="fas fa-arrow-down fa-2x"></i></a>
     </section>
+
 
     <section id="publications">
         <h1>Academic</h1>
@@ -239,19 +233,21 @@
         <h1>Education & Work Experience</h1>
         
         <p><b>🧑‍🎓 Education</b> <br> </p> 
-        <p><p class="year">2023 - Today</p> <b>PhD</b> - <i class="text"> Engineering Sciences and Technology </i></p></p>
-        <p><p class="year">2021 - 2023</p> <b>Master</b> - <i class="text"> Computer Sciences</i> </p></p>
-        <p><p class="year">2017 - 2021</p> <b>Bachelor</b> - <i class="text"> Computer Sciences</i> </p></p>
-
+        <div class="text">
+            <p><p class="year">2023 - Today</p> <b>PhD</b> - <i class="text"> Engineering Sciences and Technology </i></p></p>
+            <p><p class="year">2021 - 2023</p> <b>Master</b> - <i class="text"> Computer Sciences</i> </p></p>
+            <p><p class="year">2017 - 2021</p> <b>Bachelor</b> - <i class="text"> Computer Sciences</i> </p></p>
+        </div>
         <br>
         <p><b>👷 Work experience</b> <br> </p> 
+        <div class="text">
         <p><p class="year">2020 - Today</p> <b>Nice O' Clock</b> - <i class="text">Video editing</i></p></p>
         <p><p class="year">2023</p> <b>FARI - AI for the Common Good Institute</b> - <i class="text">Student job: Programming and System administration</i> </p></p>
         <p><p class="year">2023</p> <b>IRIDIA (ULB)</b> - <i class="text">Student job: Research & Development</i> </p></p>
         <p><p class="year">2019, 2020 & 2021</p> <b>Le Panoramique (Floreal Group)</b> - <i class="text">Student job: Surveillance, cleaning and ticket sales</i> </p></p>
         <p><p class="year">2019</p> <b>Mazure 14 (Ville de Tournai)</b> - <i class="text">Student job:  Animation of a musical summer camp</i></p></p>
         <p><p class="year">2017 & 2018</p> <b>THERSA</b> - <i class="text">Student job: Manual work</i></p></p>
-
+        </div>
 
 
         <a href="#current-project" class="prev-section"><i class="fas fa-arrow-up fa-2x"></i></a>
@@ -259,6 +255,8 @@
     </section>
 </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
     $('a[href^="#"]').on('click', function(event) {
@@ -270,6 +268,13 @@
             }, 1000); // The number here represents the speed of the scroll in milliseconds
         }
     });
+
+    $(document).ready(function(){
+        $(".profile-img").click(function(){
+            $("#rune0").fadeIn(2000); // 2000ms = 2 seconds
+        });
+    });
+
 </script>
 
 <script>
