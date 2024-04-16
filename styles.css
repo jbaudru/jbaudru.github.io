@@ -28,6 +28,11 @@ p {
     max-width: 50vw;
 }
 
+b {
+    font-family: 'HurmeGeometricSans1-Bold';
+    max-width: 50vw;
+}
+
 ul {
     font-family: 'HurmeGeometricSans1';
     max-width: 50vw;
@@ -35,6 +40,7 @@ ul {
 
 small {
     font-family: 'HurmeGeometricSans1-Thin';
+    font-size: normal;
     max-width: 50vw;
 }
 
@@ -50,11 +56,11 @@ a {
 
 .topic {
     font-family: 'HurmeGeometricSans1-Thin';
-    font-size: small;
+    font-size: normal;
     background-color: #383838;
     padding: 5px;
     margin: 5px;
-    width: 120px;
+    width:150px;
     border-radius: 10px ;
     text-align: center;
 }
@@ -70,8 +76,8 @@ a {
 
 .accepted {
     font-family: 'HurmeGeometricSans1-Thin';
-    font-size: x-small;
-    background-color: #c96e00;
+    font-size: normal;
+    background-color: #00852c;
     padding: 3px;
     width: 70px;
     border-radius: 5px ;
@@ -81,7 +87,7 @@ a {
 
 .poster {
     font-family: 'HurmeGeometricSans1-Thin';
-    font-size: x-small;
+    font-size: normal;
     background-color: #006fc9;
     padding: 3px;
     width: 70px;
@@ -92,7 +98,7 @@ a {
 
 .paper {
     font-family: 'HurmeGeometricSans1-Thin';
-    font-size: x-small;
+    font-size: normal;
     background-color: #6b00c9;
     padding: 3px;
     width: 70px;
@@ -103,13 +109,19 @@ a {
 
 .year {
     font-family: 'HurmeGeometricSans1-Thin';
-    font-size: small;
+    font-size: normal;
     background-color: #315042;
     padding: 3px;
     width: 70px;
     border-radius: 5px ;
     text-align: center;
     display: inline;
+
+}
+
+.text{
+    font-family: 'HurmeGeometricSans1';
+    max-width: 50vw;
 }
 
 body {
@@ -125,6 +137,10 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
+}
+
+.text {
+    display: inline-flexbox;
 }
 
 .next-section {
@@ -212,27 +228,10 @@ section {
     object-fit: cover;
 }
 
-.profile-img:hover {
-    animation: spin 2s linear infinite;
-    mix-blend-mode: screen;
-}
 
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-}
-
-
-.color-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: #454545; /* Change this to your desired color */
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
 }
 
 
