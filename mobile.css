@@ -47,6 +47,12 @@ a {
     max-width: 90vw;
 }
 
+b {
+    font-family: 'HurmeGeometricSans1-Bold';
+    max-width: 50vw;
+}
+
+
 .text {
     max-width: 90vw;
 }
@@ -218,9 +224,30 @@ section {
     object-fit: cover;
 }
 
+.text{
+    font-family: 'HurmeGeometricSans1';
+}
+
+.rune{
+    width: 90px;
+    display: none;
+}
 
 
+.secret {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
 
+.secret-img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
 
 .grid {
     display: grid;
@@ -292,6 +319,10 @@ section {
 
 .grid-item:hover .overlay .text {
     display: block; /* Show the text when the mouse hovers over the grid item */
+}
+
+#secret {
+    background-color: #2C302E ; /*#750D37;*/
 }
 
 #header {
