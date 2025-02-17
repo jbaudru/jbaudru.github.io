@@ -33,6 +33,27 @@ header h1 {
     color: #0077ff;
 }
 
+
+.sort-controls {
+    text-align: right;
+    padding: 0rem 4rem;
+}
+
+.sort-btn {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sort-btn:hover {
+    background: #f5f5f5;
+    border-color: #999;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -45,7 +66,7 @@ header h1 {
     background-color: white;
     border: 1px solid lightgrey;
     padding: 1.5rem;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     border-radius: 8px;
     transition: transform 0.2s;
     display: flex;
@@ -92,6 +113,10 @@ header h1 {
         padding: 1.5rem;
     }
 
+    .sort-controls {
+        padding: 1.5rem;
+    }
+
     header {
         padding-left: 1.5rem;
         padding-top: 2.5rem;
@@ -112,6 +137,18 @@ header h1 {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
+}
+
+.date {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 4px 10px;
+    border-radius: 0 0 5px 0px;
+    border: 1px solid lightgrey;
+    font-size: 0.7rem;
+    color: #666;
+    background-color: white;
 }
 
 .category.about {
