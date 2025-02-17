@@ -94,8 +94,8 @@ header h1 {
 
 .category {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -1px; 
+    right: -1px;
     padding: 4px 10px;
     border-radius: 0 0 0 5px;
     font-size: 0.7rem;
