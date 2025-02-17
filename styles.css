@@ -13,6 +13,7 @@ header {
     background-color: white;
     padding-left: 4rem;
     padding-top: 4rem;
+    margin-bottom: 1rem;
     text-align: left;
 }
 
@@ -88,7 +89,16 @@ header h1 {
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr;
-        padding: 1rem;
+        padding: 1.5rem;
+    }
+
+    header {
+        padding-left: 1.5rem;
+        padding-top: 2.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
     }
 }
 
