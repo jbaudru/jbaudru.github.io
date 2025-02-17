@@ -1,286 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Julien Baudru</title> <!-- Change the page title here -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julien V. Baudru</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>">
     
-    <link rel="stylesheet" media="(min-width:1100px)" href="styles.css" />
-    <link rel="stylesheet" media="(max-width:1100px)" href="mobile.css" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jbaudru.github.io/">
-    <meta property="og:title" content="Julien Baudru">
-    <meta property="og:description" content="PhD student in Engineering Sciences and Technology">
-    <meta property="og:image" content="https://jbaudru.github.io/img/profile.jpg">
-
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBDGW9PZCB"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-VBDGW9PZCB');
-    </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const email = String.fromCharCode(106,117,108,105,101,110,46,98,97,117,100,114,117,64,117,108,98,46,98,101);
+        document.querySelector('.protected-email').textContent = email;
+    });
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
 
 <body>
-    <section id="header">
-        <div class="content">
-            <h1>Julien Baudru <a class="social-img" href="files/what.html" target="_blank"><img id="rune0" class="rune" src="img/rune_0.png"> </a></h1> 
+    <header>
+        <h1>Julien V. Baudru</h1>
+        <a href="#" class="protected-email" onmousedown="return false"></a>
+    </header>
+    
+    <main class="grid-container">
 
-
-            <p><i>PhD student in Engineering Sciences and Technology</i></p>
-            <p>IRIDIA - Université Libre de Bruxelles</p>
-
-            <br>
-
-            <div class="profile-img-container">
-                <img src="img/profile.jpg" class="profile-img">
-            </div>
-
-            <p><b>💡 Topics</b></p>
-            <div class="topics">
-                <p class="topic">Artificial Intelligence</p>
-                <p class="topic">Machine Learning</p>
-                <p class="topic">Road Network</p> 
-                <p class="topic">Multi-Modal Network</p> 
-                <p class="topic">Car-Sharing</p>
-                <p class="topic">Ride-Pooling</p>  
-                <p class="topic">Sustainable Mobility</p> 
-                <p class="topic">Smart Transportation</p> 
-            </div>
-            <br>
-            <br>
-            <p><b>🖖 Follow me</b></p>
-            <div class="social-links">
-                <a class="social-img" href="https://www.linkedin.com/in/julien-baudru/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a class="social-img" href="https://github.com/jbaudru" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a class="social-img" href="https://www.researchgate.net/profile/Julien-Baudru" target="_blank"><i class="fab fa-researchgate fa-2x"></i></a>
-            </div>
-            <a href="#about-me" class="next-section"><i class="fas fa-arrow-down fa-2x"></i></a>
-        </div>
+        <article class="blog-tile">
+            <span class="category about">About</span>
+            <h2>About</h2>
+            <p>PhD Student in Engineering Sciences and Technology</p>
+            <p><strong>Affiliation:</strong> FRIA/FNRS - PhD Student at Université Libre de Bruxelles</p>
+            <p><strong>Location:</strong> Brussels, Belgium</p>
+            <p><strong>Research Focus:</strong> Algorithms for ride-sharing and car-pooling in large multimodal road networks.</p>
+            <p><strong>Lab:</strong> IRIDIA/FARI - Université Libre de Bruxelles</p>
         
-        <div class="header-right">
-            <h2>Summary</h2>
-                <p><a href="#about-me">🪪 About Me</a></p>
-                <p><a href="#publications">📄 Academic </a></p>
-                <p><a href="#current-project">🧪 Projects</a></p>
-                <p><a href="#experience">🧑‍🎓 Education & Work </a></p>
-        </div>
+            <a href="https://www.linkedin.com/in/julien-baudru/" target="_blank" rel="noopener noreferrer">Read more</a>
+        </article>
 
-        <br>
-        <div class="logo">
-            <img src="img/IRIDIA.png" class="header-img" >
-            <img src="img/FARI.png" class="header-img">
-            <img src="img/ULB.png" class="header-img">
-          
-        </div>
-    </section>
+        <article class="blog-tile">
+            <span class="category research">Research</span>
+            <h2>Early evidence of how LLMs outperform traditional systems on OCR/HTR tasks for historical records</h2>
+            <p>We explore the ability of two LLMs -- GPT-4o and Claude Sonnet 3.5 -- to transcribe historical handwritten documents in a tabular format and compare their performance to traditional OCR/HTR systems. Considering the tabular form of the data, two types of experiments are executed: one where the images are split line by line and the other where the entire scan is used as input.</p>
+            <a href="https://www.researchgate.net/publication/388232516_Early_evidence_of_how_LLMs_outperform_traditional_systems_on_OCRHTR_tasks_for_historical_records" target="_blank" rel="noopener noreferrer">Read more</a>
+        </article>
 
+        <article class="blog-tile">
+            <span class="category teaching">Workshop</span>
+            <h2>RAG Workshop: Retrieval-Augmented Generation</h2>
+            <p>A workshop organized at HELHa Tournai for computer science students, focusing on Retrieval-Augmented Generation (RAG). This advanced AI technique aims to improve the accuracy and reliability of text generated by Large Language Models (LLMs) by incorporating external knowledge sources.</p>
+            <p><strong>Institution:</strong> Haute École Louvain en Hainaut (HELHa) - Tournai</p>
+            <a href="https://github.com/jbaudru/HELHA-RAG-Workshop" target="_blank" rel="noopener noreferrer">Read more</a>
+        </article>
 
-    <section id="about-me">
-        <h1>About Me</h1>
-        <p>
-            <b>🧪 Research </b> <br> <br>
-            I am PhD candidate at the FARI institute and at the Institut de Recherches Interdisciplinaires et de Développements en Intelligence Artificelle (IRIDIA) of the Université Libre de Bruxelles. 
-            After my bachelor’s degree, he completed his master’s in Computer Science with a specialization in artificial intelligence and algorithms at the Université Libre de Bruxelles (ULB). 
-            My current research focuses on the optimization of multi-modal transport. The idea of multi-modal routing is to adapt the famous shortest path problem to road networks combining several modes of transport. 
-            One way of achieving this is to construct the network as a layered structure, where each layer corresponds to a mode of transport. 
-            Thus, the ultimate goal of this research will be to find a solution to this mobility problem by including the notions of time, price and ecological impact. 
-            The second underlying objective of this research is to enable users of car-sharing solutions to optimize their trips. 
-            This is where this project comes into its own for the common good, by designing algorithmic solutions to ultimately reduce the ecological impact of transport, first in Brussels and then, we hope, everywhere.
-        </p>
+        <article class="blog-tile">
+            <span class="category research">Research</span>
+            <h2>The Comparative Analysis of Car-Pooling Algorithms for Ride-Sharing Systems</h2>
+            <p>In this paper, we present a comparative analysis of five methods for constructing ride-sharing pools of users, focusing on their efficiency in terms of execution time, the percentage of user requests fulfilled, the distance of the detour made by the driver and the waiting time of the passenger.</p>
+            <a href="https://www.researchgate.net/publication/382275671_The_Comparative_Analysis_of_Car-Pooling_Algorithms_for_Ride-Sharing_Systems" target="_blank" rel="noopener noreferrer">Read more</a>
+        </article>
 
-        <p>
-            <b>🪪 Personal </b> <br> <br>
-            Passionate about merging applied mathematics and computer science with music and image creation, driven by practicality and a desire for tangible results.
-            Fascinated by the potential of artificial intelligence to bridge the gap between rationality and creativity, with a focus on positively impacting the environment through technology.
-        </p>
-        <a href="#header" class="prev-section"><i class="fas fa-arrow-up fa-2x"></i></a>
-        <a href="#publications" class="next-section"><i class="fas fa-arrow-down fa-2x"></i></a>
-    </section>
+        <article class="blog-tile">
+            <span class="category research">Research</span>
+            <h2>Heuristic Optimal Meeting Point Algorithm for Car-Sharing in Large Multimodal Road Networks</h2>
+            <p>This article introduces a new version of the car-pooling problem (CPP). This involves defining rendezvous or meeting point in such a way that the travel times of the users are fair, this problem shares similarities with the problem of finding the optimal meeting point (OMP) in a graph.</p>
+            <a href="https://www.researchgate.net/publication/your_publication_id" target="_blank" rel="noopener noreferrer">Read more</a>
+        </article>
 
+        <article class="blog-tile">
+            <span class="category poster">Poster</span>
+            <h2>Lyric Networks Unveiled: A Novel Approach to Analyzing The Beatles' Songs Using Text Embeddings and Network Analysis</h2>
+            <p>A research project combining natural language processing and network analysis to explore patterns and relationships in The Beatles' song lyrics. Using text embeddings and graph theory, we uncover thematic connections and linguistic patterns across their discography.</p>
+            <a href="https://www.researchgate.net/publication/378793518_Lyric_Networks_Unveiled_A_Novel_Approach_to_Analyzing_The_Beatles'_Songs_Using_Text_Embeddings_and_Network_Analysis" target="_blank" rel="noopener noreferrer">Read more</a>
+        </article>
 
-    <section id="publications">
-        <h1>Academic</h1>
-        <p><b>📄 Publications </b> </p> 
-        
-        <div class="text">
-            <p><p class="accepted">Accepted</p> <p class="paper">Paper</p> <b class="text">VEHITS 2024</b> - Angers - <i class="text"><a href="https://www.researchgate.net/publication/379044384_Heuristic_Optimal_Meeting_Point_Algorithm_for_Car-Sharing_in_Large_Multimodal_Road_Networks" target="_blank">Heuristic Optimal Meeting Point Algorithm for Car-Sharing in Large Multimodal Road Networks.</a></i></p>
-          
-            <p><p class="accepted">Accepted</p> <p class="paper">Paper</p> <b class="text">ITFT 2024</b> - Helsinki - <i class="text"><a href="https://www.researchgate.net/publication/382275671_The_Comparative_Analysis_of_Car-Pooling_Algorithms_for_Ride-Sharing_Systems?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoicGFnZUNvbnRlbnQifX0" target="_blank">The Comparative Analysis of Car-Pooling Algorithms for Ride-Sharing Systems.</a></i></p>
+        <article class="blog-tile">
+            <span class="category projects">Project</span>
+            <h2>AI Detection of Illegal Animal Trade Online</h2>
+            <p>A collaborative project between VUB and ULB researchers through the FARI Institute to detect illegal animal trade online using artificial intelligence. The system analyzes photos and text from online advertisements to identify illegal practices and has processed over 33,500 ads since January 2022.</p>
+            <a href="https://www.rtbf.be/article/une-intelligence-artificielle-aide-a-detecter-le-commerce-illegal-d-animaux-sur-internet-11093461" target="_blank" rel="noopener noreferrer">Read more</a>
+        </article>
 
-            <p><p class="accepted">Accepted</p> <p class="poster">Poster</p> <b class="text">NetSci 2024</b> - Québec - <i class="text"><a href="https://www.researchgate.net/publication/378568484_Heuristic_Optimal_Meeting_Point_Algorithm_for_Car-Sharing_in_Large_Multi-modal_Road_Networks_Abstract" target="_blank">Heuristic Optimal Meeting Point Algorithm for Car-Sharing in Large Multi-modal Road Networks.</a></i></p>
-           
-            <p><p class="accepted">Accepted</p> <p class="poster">Poster</p> <b class="text">NetSci 2024</b> - Québec - <i class="text"><a href="https://www.researchgate.net/publication/378793518_Lyric_Networks_Unveiled_A_Novel_Approach_to_Analyzing_The_Beatles'_Songs_Using_Text_Embeddings_and_Network_Analysis_Abstract" target="_blank">Lyric Networks Unveiled: A Novel Approach to Analyzing The Beatles’ Songs Using Text Embeddings and Network Analysis.</a></i></p>
-         
-            <p><p class="accepted">Accepted</p> <p class="poster">Poster</p> <b class="text">NetSciX 2022</b> - Porto - <i class="text"><a href="https://www.researchgate.net/publication/367340003_Understanding_the_universe_of_jazz_by_means_of_its_musicians_networks" target="_blank">Understanding the universe of jazz by means of its musicians networks.</a></i> </p> 
-            
-            
-            
-        </div>
-
-        
-        <br>
-
-        <p><b>⚙️ Technical reports </b> </p> 
-        
-        <div class="text">
-            <p><p class="poster">Report</p>  <i class="text"><a href="https://www.researchgate.net/publication/377895967_LLM-Driven_Content_Hands-Free_Blog_and_Article_Generation_Across_Diverse_Topics" target="_blank">LLM-Driven Content: Hands-Free Blog and Article Generation Across Diverse Topics.</a></i> </p> 
-            
-            <p><p class="poster">Report</p>  <i class="text"><a href="https://www.researchgate.net/publication/377337168_ACE_Adaptative_ChatGPT_for_Entreprise" target="_blank">ACE: Adaptative ChatGPT for Entreprise.</a></i></p>
-        </div>
-
-        
-        <br>
-        
-        <p><b>🧑‍🎓 Courses </b> <small>(List of courses for which I was teaching assistant)</small> </p> 
-        
-        <div class="text">
-            <p><p class="poster">Project</p> <p class="paper">Pratical</p>  <b class="text">Université Libre de Bruxelles</b> - INFO-H410 - Techniques of artificial intelligence </p>
-      
-            <p><p class="poster">Project</p> <b class="text">Université Libre de Bruxelles</b> - INFO-H402 - Computing project</p>
-      
-            <p><p class="poster">Project</p> <b class="text">Université Libre de Bruxelles</b> - INFO-S2001 - Informatique </p>
-        
-            <p><p class="poster">Project</p> <b class="text">Université Libre de Bruxelles</b> - TRAN-H201 - Projet multidisciplinaire II et gestion de projet </p>
-        </div>
-        
-        <a href="#about-me" class="prev-section"><i class="fas fa-arrow-up fa-2x"></i></a>
-        <a href="#current-project" class="next-section"><i class="fas fa-arrow-down fa-2x"></i></a>
-    </section>
-
-    <section id="current-project">
-        <h1>Spare-time project</h1>
-             <br> 
-            <div class="grid">
-                <div class="grid-item">
-                    <img src="img/AI_dance.png" alt="Project 1">
-                    <div class="overlay">
-                        <p class="title">From Movement to Melody</p> <!-- Move the title outside of the .text div -->
-                        <div class="text">
-                            <p class="description">This project merges human movement with AI through computer vision to create a dynamic dance experience with responsive sound generation, enriching both performer and audience experiences and contributing significantly to cultural innovation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-item">
-                    <img src="img/arduino.png" alt="Project 2">
-                    <div class="overlay">
-                        <p class="title">Random Music Sequencer</p> <!-- Move the title outside of the .text div -->
-                        <div class="text">
-                            <p class="description">In this Arduino project, I'm crafting a compact 16-bar sequencer. I'm programming steps and notes to play in a sequence, controlling the timing and order of musical events. Adding a twist, I'm incorporating random parameters to introduce variation and spontaneity into the composition.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-item">
-                    <img src="img/rap.png" alt="Project 3">
-                    <div class="overlay">
-                        <p class="title">Rap Lyrics Creation</p> <!-- Move the title outside of the .text div -->
-                        <div class="text">
-                            <p class="description">This project utilizes embeddings to create a visual creationn for French rap lyrics, where smaller distances between embeddings reflects closer proximity, providing a compact visualization of thematic connections and stylistic similarities among the lyrics.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-item">
-                    <img src="img/blog.png" alt="Project 4">
-                    <div class="overlay">
-                        <p class="title">Hands-Free Blog Generation</p> <!-- Move the title outside of the .text div -->
-                        <div class="text">
-                            <p class="description">A framework for automating the creation of blogs and articles using LLMs, focusing on time-saving and customization for diverse topics. It outlines the architecture, methodology, and practical applications of the system, highlighting its potential to streamline content generation while maintaining quality and personalization.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-item">
-                    <img src="img/esopy.png" alt="Project 4">
-                    <div class="overlay">
-                        <p class="title">EsoPy Framework</p> <!-- Move the title outside of the .text div -->
-                        <div class="text">
-                            <p class="description">This project provides a Python template for building esoteric programming languages. It includes a lexer and an interpreter, and a main file that ties everything together.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-item">
-                    <img src="img/swarm.png" alt="Project 4">
-                    <div class="overlay">
-                        <p class="title">3D Swarm Design</p> <!-- Move the title outside of the .text div -->
-                        <div class="text">
-                            <p class="description">This project explore a new industrial design method inspired by bird flight behavior, surpassing previous limitations to create shapes reminiscent of natural forms.</p>
-                        </div>
-                    </div>
-                </div>
-                
-
-            </div>
-        
-
-
-        <a href="#publications" class="prev-section"><i class="fas fa-arrow-up fa-2x"></i></a>
-        <a href="#experience" class="next-section"><i class="fas fa-arrow-down fa-2x"></i></a>
-    </section>
-
-    <section id="experience">
-        <h1>Education & Work Experience</h1>
-        
-        <p><b>🧑‍🎓 Education</b> <br> </p> 
-        <div class="text">
-            <p><p class="year">2023 - Today</p> <b>PhD</b> - <i class="text"> Engineering Sciences and Technology </i></p></p>
-            <p><p class="year">2021 - 2023</p> <b>Master</b> - <i class="text"> Computer Sciences</i> </p></p>
-            <p><p class="year">2017 - 2021</p> <b>Bachelor</b> - <i class="text"> Computer Sciences</i> </p></p>
-        </div>
-        <br>
-        <p><b>👷 Work experience</b> <br> </p> 
-        <div class="text">
-        <p><p class="year">2020 - Today</p> <b>Nice O' Clock</b> - <i class="text">Video editing</i></p></p>
-        <p><p class="year">2023</p> <b>FARI - AI for the Common Good Institute</b> - <i class="text">Student job: Programming and System administration</i> </p></p>
-        <p><p class="year">2023</p> <b>IRIDIA (ULB)</b> - <i class="text">Student job: Research & Development</i> </p></p>
-        <p><p class="year">2019, 2020 & 2021</p> <b>Le Panoramique (Floreal Group)</b> - <i class="text">Student job: Surveillance, cleaning and ticket sales</i> </p></p>
-        <p><p class="year">2019</p> <b>Mazure 14 (Ville de Tournai)</b> - <i class="text">Student job:  Animation of a musical summer camp</i></p></p>
-        <p><p class="year">2017 & 2018</p> <b>THERSA</b> - <i class="text">Student job: Manual work</i></p></p>
-        </div>
-
-
-        <a href="#current-project" class="prev-section"><i class="fas fa-arrow-up fa-2x"></i></a>
-        <a href="#header" class="next-section"><i class="fas fa-male fa-2x"></i></a>
-    </section>
+        <!-- Add more tiles as needed -->
+    </main>
 </body>
 </html>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script>
-    $('a[href^="#"]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-        if(target.length) {
-            event.preventDefault();
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top
-            }, 1000); // The number here represents the speed of the scroll in milliseconds
-        }
-    });
-
-    $(document).ready(function(){
-        $(".profile-img").click(function(){
-            $("#rune0").fadeIn(2000); // 2000ms = 2 seconds
-        });
-    });
-
-</script>
-
-<script>
-    for(let i = 0; i < document.styleSheets.length; i++) {
-        console.log(document.styleSheets[i].href);
-    }
-    console.log(window.innerWidth);
-</script>
