@@ -38,7 +38,20 @@
         
         articles.forEach(article => container.appendChild(article));
     }
-    </script>
+</script>
+
+<script>
+    function handleArticleClick(event) {
+        // Ignore if clicking on a link or selecting text
+        if (event.target.tagName === 'A' || window.getSelection().toString()) {
+            return;
+        }
+        
+        const article = event.currentTarget;
+        const link = article.querySelector('a').href;
+        window.open(link, '_blank');
+    }
+</script>
 
 <body>
     <header>
@@ -53,7 +66,7 @@
         </div>
         <div class="grid-container">
 
-            <article class="blog-tile">
+            <article class="blog-tile"  onclick="handleArticleClick(event)">
                 <span class="category about">OTHER</span>
                 <h2>About</h2>
                 <p>PhD Student in Engineering Sciences and Technology</p>
@@ -65,7 +78,7 @@
                 <a href="https://www.linkedin.com/in/julien-baudru/" target="_blank" rel="noopener noreferrer">Read more</a>
             </article>
 
-            <article class="blog-tile">
+            <article class="blog-tile"  onclick="handleArticleClick(event)">
                 <span class="date">2025</span>
                 <span class="category research">Research</span>
                 <h2>Early evidence of how LLMs outperform traditional systems on OCR/HTR tasks for historical records</h2>
@@ -73,7 +86,7 @@
                 <a href="https://www.researchgate.net/publication/388232516_Early_evidence_of_how_LLMs_outperform_traditional_systems_on_OCRHTR_tasks_for_historical_records" target="_blank" rel="noopener noreferrer">Read more</a>
             </article>
 
-            <article class="blog-tile">
+            <article class="blog-tile"  onclick="handleArticleClick(event)">
                 <span class="date">2024</span>
                 <span class="category teaching">Workshop</span>
                 <h2>RAG Workshop: Retrieval-Augmented Generation</h2>
@@ -82,7 +95,7 @@
                 <a href="https://github.com/jbaudru/HELHA-RAG-Workshop" target="_blank" rel="noopener noreferrer">Read more</a>
             </article>
 
-            <article class="blog-tile">
+            <article class="blog-tile"  onclick="handleArticleClick(event)">
                 <span class="date">2024</span>
                 <span class="category research">Research</span>
                 <h2>The Comparative Analysis of Car-Pooling Algorithms for Ride-Sharing Systems</h2>
@@ -91,7 +104,7 @@
             </article>
 
 
-            <article class="blog-tile">
+            <article class="blog-tile"  onclick="handleArticleClick(event)">
                 <span class="date">2024</span>
                 <span class="category projects">Project</span>
                 <h2>Award-Winning Collaboration with Procter & Gamble</h2>
@@ -99,7 +112,7 @@
                 <a href="https://actus.ulb.be/fr/actus/recherche/les-laboratoires-iridia-et-lisa-primes-pour-leur-collaboration-innovante-avec-procter-gamble" target="_blank" rel="noopener noreferrer">Read more</a>
             </article>
 
-            <article class="blog-tile">
+            <article class="blog-tile"  onclick="handleArticleClick(event)">
                 <span class="date">2024</span>
                 <span class="category research">Research</span>
                 <h2>Heuristic Optimal Meeting Point Algorithm for Car-Sharing in Large Multimodal Road Networks</h2>
@@ -107,7 +120,7 @@
                 <a href="https://www.researchgate.net/publication/your_publication_id" target="_blank" rel="noopener noreferrer">Read more</a>
             </article>
 
-            <article class="blog-tile">
+            <article class="blog-tile"  onclick="handleArticleClick(event)">
                 <span class="date">2024</span>
                 <span class="category poster">Poster</span>
                 <h2>Lyric Networks Unveiled: A Novel Approach to Analyzing The Beatles' Songs Using Text Embeddings and Network Analysis</h2>
@@ -115,7 +128,7 @@
                 <a href="https://www.researchgate.net/publication/378793518_Lyric_Networks_Unveiled_A_Novel_Approach_to_Analyzing_The_Beatles'_Songs_Using_Text_Embeddings_and_Network_Analysis" target="_blank" rel="noopener noreferrer">Read more</a>
             </article>
 
-            <article class="blog-tile">
+            <article class="blog-tile"  onclick="handleArticleClick(event)">
                 <span class="date">2023</span>
                 <span class="category projects">Project</span>
                 <h2>AI Detection of Illegal Animal Trade Online</h2>
