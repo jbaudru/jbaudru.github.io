@@ -159,6 +159,10 @@ header h1 {
     background-color: #4CAF50;
 }
 
+.category.talk {
+    background-color: #af4c75;
+}
+
 .category.research {
     background-color: #6b21f3;
 }
