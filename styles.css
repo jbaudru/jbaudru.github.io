@@ -77,6 +77,10 @@ header h1 {
     min-height: 250px;
 }
 
+.blog-tile.other-category {
+    background-color: #efefef; /* light grey */
+}
+
 
 .blog-tile:hover {
     transform: translateY(-5px);
@@ -142,6 +146,8 @@ header h1 {
     color: white;
     text-transform: uppercase;
 }
+
+
 
 .date {
     position: absolute;
