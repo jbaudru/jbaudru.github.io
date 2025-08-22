@@ -182,3 +182,7 @@ header h1 {
 .category.blog {
     background-color: #0077ff;
 }
+
+.category.book {
+    background-color: #e91e63;
+}
