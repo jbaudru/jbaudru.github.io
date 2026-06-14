@@ -25,6 +25,10 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+p {
+    text-align: justify;
+}
+
 .protected-email {
     user-select: none;
     -webkit-user-select: none;
